@@ -62,7 +62,7 @@ function collisionDetection() {
 					dy = -dy;
 					b.health -= 1;
 					score += b.health == 0 ? 1 : 0;
-					if(score == (brickRowCount*brickColumnCount) - brickRowCount) {
+					if(score == (brickRowCount*(brickColumnCount-1))) {
                         alert("CONGRATULATIONS! You have won the game.");
 						x = canvas.width / 2; y = canvas.height-30;
 						dy = -2;
@@ -108,7 +108,7 @@ function drawBricks() {
 			continue;
 		}
         for(var r=0; r<brickRowCount; r++) {
-			b = bricks[c][r];
+			var b = bricks[c][r];
 			if (b.health > 0) {
 				var brickX = (c*(brickWidth+brickPadding))+brickOffsetLeft;
 				var brickY = (r*(brickHeight+brickPadding))+brickOffsetTop;
@@ -139,8 +139,14 @@ function draw() {
 	if(y + dy < ballRadius) {
     	dy = -dy;
 	} else if(y + dy > canvas.height-ballRadius) {
-		if(x > paddleX && x < paddleX + paddleWidth) {
+		if(x >= paddleX && x <= paddleX + paddleWidth) {
 			dy = -dy;
+			if (x < paddleX + (paddleWidth/2)) {
+				// left
+				dx = dx < 0 ? dx : -dx;
+			} else {
+				dx = dx > 0 ? dx : -dx;
+			}
     	} else {
 			lives--;
 			if(!lives) {
@@ -153,7 +159,7 @@ function draw() {
     			document.location.reload();
 				
 			} else {
-				alert("You died!")
+				alert("You died!");
 				x = canvas.width/2;
 				y = canvas.height-30;
 				dx = 2;
