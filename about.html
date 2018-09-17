@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Jad Shaheen</title>
+	<link rel="icon" href="icon.png">
 	<style>
 	body {
 		line-height:30px;
@@ -14,12 +15,14 @@
 		font-family: verdana;
 		color: #484848;
 	}
-	a:link:not(.nps), a:visited:not(.nps) {
+	a:link, a:visited, a:hover {
 		color: #484848;
 		font-weight: bold;
 		text-decoration: none;
 	}
-	a:hover {
+	a.nps:link, a.nps:visited, a.nps:hover {
+		color: darkgreen;
+		font-weight: bold;
 		text-decoration: none;
 	}
 	ul {
@@ -28,10 +31,6 @@
 		column-width: auto;
 		padding: 0;
 	    list-style-type: none;
-	}
-	.nps {
-		color: darkgreen;
-		font-weight: bold;
 	}
     </style>
 </head>
