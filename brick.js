@@ -8,7 +8,7 @@ var dx = new Date().getSeconds() % 2 == 0 ? 2 : -2, dy = -2;
 var ballRadius = 10;
 var paddleHeight = 10, paddleWidth = 75, paddleX = (canvas.width-paddleWidth)/2;
 
-var brickRowCount = 6, brickColumnCount = 2, brickWidth = 50, brickHeight = 20;
+var brickRowCount = 6, brickColumnCount = 13, brickWidth = 50, brickHeight = 20;
 var brickPadding = 5, brickOffsetTop = 30, brickOffsetLeft = 30;
 
 var bricks = [];
