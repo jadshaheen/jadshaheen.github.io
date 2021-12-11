@@ -8,7 +8,7 @@ var dx = new Date().getSeconds() % 2 == 0 ? 2 : -2, dy = -2;
 var ballRadius = 10;
 var paddleHeight = 10, paddleWidth = 75, paddleX = (canvas.width-paddleWidth)/2;
 
-var brickRowCount = 6, brickColumnCount = 13, brickWidth = 50, brickHeight = 20;
+var brickRowCount = 6, brickColumnCount = 2, brickWidth = 50, brickHeight = 20;
 var brickPadding = 5, brickOffsetTop = 30, brickOffsetLeft = 30;
 
 var bricks = [];
@@ -62,7 +62,7 @@ function collisionDetection() {
 					dy = -dy;
 					b.health -= 1;
 					score += b.health == 0 ? 1 : 0;
-					if(score == (brickRowCount*(brickColumnCount-1))) {
+					if(score == (brickRowCount*brickColumnCount)) {
                         alert("CONGRATULATIONS! You have won the game.");
 						x = canvas.width / 2; y = canvas.height-30;
 						dy = -2;
