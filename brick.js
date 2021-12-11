@@ -31,6 +31,7 @@ document.addEventListener("mousemove", mouseMoveHandler, false);
 document.addEventListener("mouseup", clickHandler, false);
 
 function clickHandler(e) {
+	console.log("entered pause func");
 	paused = !paused
 }
 
