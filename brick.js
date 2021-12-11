@@ -62,7 +62,7 @@ function collisionDetection() {
 					dy = -dy;
 					b.health -= 1;
 					score += b.health == 0 ? 1 : 0;
-					if(score == (brickRowCount*brickColumnCount)) {
+					if(score == ((brickRowCount-1)*brickColumnCount)) {
                         alert("CONGRATULATIONS! You have won the game.");
 						x = canvas.width / 2; y = canvas.height-30;
 						dy = -2;
