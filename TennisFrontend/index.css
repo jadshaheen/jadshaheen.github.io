@@ -8,7 +8,7 @@
 
 div {
     margin: auto;
-    width: 30%;
+    width: max-content;
 }
 
 table, th, td {
