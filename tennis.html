@@ -10,10 +10,14 @@
 </head>
 
 <body>
-<p>Enter a player name, tournament name, or year to get Grand Slam information.<br> You can also enter 'rankings' for the current ATP rankings.</p>
-<form id="form" onsubmit="getPlayerInfo();return false">
-    <input type="text" id="player" placeholder="Enter player name"/>
-</form>
+<div>
+    <p id="intro">Enter a player name, tournament name, or year to get Grand Slam information.<br> You can also enter 'rankings' for the current ATP rankings.</p>
+</div>
+<div>
+    <form id="form" onsubmit="getPlayerInfo();return false">
+        <input type="text" id="player" placeholder="Enter player name"/>
+    </form>
+</div>
 <div id="playerfact"></div>
 <script src="TennisFrontend/index.js"></script>
 </body>

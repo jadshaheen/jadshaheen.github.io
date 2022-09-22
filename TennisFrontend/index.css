@@ -1,6 +1,30 @@
-table, th, td{
-    border: 1px solid silver;
+* {
+    font-family: Helvetica, sans-serif;
 }
+
+/*#intro {*/
+/*    font-family: Courier, sans-serif;*/
+/*}*/
+
+div {
+    margin: auto;
+    width: 30%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
 table {
+    width: 100%;
     border-collapse: collapse;
 }
+
+tr:nth-child(odd){
+    background-color: #f8f8f8;
+    /*color: #fff;*/
+}
+
+/*#playerfact p {*/
+/*    text-align: center;*/
+/*}*/
