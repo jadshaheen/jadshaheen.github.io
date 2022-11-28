@@ -25,6 +25,15 @@ tr:nth-child(odd){
     /*color: #fff;*/
 }
 
+.mens {
+    width: 50%;
+    float: left;
+}
+
+.womens {
+    margin-left: 50%;
+}
+
 /*#playerfact p {*/
 /*    text-align: center;*/
 /*}*/
