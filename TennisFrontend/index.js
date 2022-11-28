@@ -16,7 +16,7 @@ function getPlayerInfo() {
                 if (player['rank']) {
                     htmlString += "<p>At age " + player['age'] +
                         ", " + normalizeString(searchQuery) +
-                        " is ranked number " +
+                        " is currently ranked number " +
                         "<b>" + player['rank'] + "</b>" +
                         " in the world by the ATP.</p>";
                 }
