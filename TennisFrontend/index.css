@@ -6,10 +6,10 @@
 /*    font-family: Courier, sans-serif;*/
 /*}*/
 
-/*div {
+div {
     margin: auto;
     width: max-content;
-}*/
+}
 
 table, th, td {
     border: 1px solid #cccccc;
@@ -28,7 +28,7 @@ tr:nth-child(odd){
 .ranktable {
     width: 50%;
     float: left;
-    padding: 15px;
+    padding: 5px;
 }
 
 /*#playerfact p {*/
