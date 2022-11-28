@@ -38,11 +38,11 @@ function getPlayerInfo() {
                 let rankings = data['rankings'];
                 let mensRankings = rankings[0]
                 let womensRankings = rankings[1]
-                htmlString += "<div id='mens'>"
+                htmlString += "<div class='ranktable'>"
                 htmlString += "<p>Here are the current <b>ATP Men's Singles</b> rankings:</p>";
                 htmlString += buildRankingsTable(mensRankings);
                 htmlString += "</div>"
-                htmlString += "<div id='womens'>"
+                htmlString += "<div class='ranktable'>"
                 htmlString += "<p>Here are the current <b>ATP Women's Singles</b> rankings:</p>";
                 htmlString += buildRankingsTable(womensRankings);
                 htmlString += "</div>"

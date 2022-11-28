@@ -25,13 +25,9 @@ tr:nth-child(odd){
     /*color: #fff;*/
 }
 
-.mens {
+.ranktable {
     width: 50%;
     float: left;
-}
-
-.womens {
-    margin-left: 50%;
 }
 
 /*#playerfact p {*/
