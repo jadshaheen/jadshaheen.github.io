@@ -1,4 +1,4 @@
-let url = 'https://polar-brook-31021.herokuapp.com/search';
+let url = 'https://web-production-d7ff.up.railway.app/search';
 
 function getPlayerInfo() {
     let searchQuery = document.getElementById("player").value;
