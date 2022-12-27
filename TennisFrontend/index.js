@@ -39,11 +39,11 @@ function displayQueryData(response, searchQuery) {
         } else if (data['tournament']) {
             let tournament = data['tournament'];
             htmlString += "<p>Here are the results of the <b>" + normalizeString(searchQuery.toLowerCase()) + "</b> final by year:</p>";
-            htmlString += buildFinalistsTable(tournament, 'tournament');
+            htmlString += buildFinalistsTable(tournament, 'year');
         } else if (data['year']) {
             let year = data['year'];
             htmlString += "<p>Here are the results of the <b>" + searchQuery + "</b> Grand Slam finals:</p>";
-            htmlString += buildFinalistsTable(year, 'year');
+            htmlString += buildFinalistsTable(year, 'tournament');
         } else if (data['rankings']) {
             let rankings = data['rankings'];
             let mensRankings = rankings[0]
@@ -86,19 +86,19 @@ function buildPlayerTournamentsTable(tournamentsData) {
     return htmlString;
 }
 
-function buildFinalistsTable(entityData, entityType) {
+function buildFinalistsTable(entity, edition) {
     let htmlString = "<table>";
     htmlString += "<tr>" +
-        "<th>" + normalizeString(entityType) + "</th>" +
+        "<th>" + normalizeString(edition) + "</th>" +
         "<th>Winner</th>" +
         "<th>Runner-Up</th>" +
         "</tr>";
-    let reversedKeys = Object.keys(entityData).reverse();
+    let reversedKeys = Object.keys(entity).reverse();
     reversedKeys.forEach(key => {
         htmlString += "<tr>" +
             "<td>" + key + "</td>" +
-            "<td>" + entityData[key][0] + "</td>" +
-            "<td>" + entityData[key][1] + "</td>" +
+            "<td>" + entity[key][0] + "</td>" +
+            "<td>" + entity[key][1] + "</td>" +
             "</tr>";
     })
     htmlString += "</table>";
