@@ -1,25 +1,25 @@
 let url = 'https://web-production-d7ff.up.railway.app/search';
 
-function getPlayerInfo() {
-    let searchQuery = document.getElementById("player").value;
-    let playerDataDiv = document.getElementById("playerfact");
+function getQueryData() {
+    let searchQuery = document.getElementById("query").value;
 
     let url_with_params = url + "?" + new URLSearchParams({
         query: searchQuery,
     })
-    let data = null;
     fetch(url_with_params)
         .then(
-            resp => {
-                data = resp.json();
-            },
+            response => displayQueryData(response, searchQuery),
             error => {
                 console.log("PROMISE FAILURE!");
                 alert("ERROR (503): The application servers are unavailable.");
             }
         )
+}
 
-    if (data != null) {
+function displayQueryData(response, searchQuery) {
+    let responseJSON = response.json();
+    console.log(responseJSON);
+    responseJSON.then(data => {
         let htmlString = "";
         if (data['player']) {
             let player = data['player'];
@@ -57,8 +57,9 @@ function getPlayerInfo() {
             htmlString += buildRankingsTable(womensRankings);
             htmlString += "</div>"
         }
-        playerDataDiv.innerHTML = htmlString;
-    }
+        let queryDataDiv = document.getElementById("querydata");
+        queryDataDiv.innerHTML = htmlString;
+    })
 }
 
 function buildPlayerTournamentsTable(tournamentsData) {
