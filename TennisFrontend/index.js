@@ -21,8 +21,8 @@ function displayQueryData(response, searchQuery) {
     console.log(responseJSON);
     responseJSON.then(data => {
         let htmlString = "";
-        if (data['player']) {
-            let player = data['player'];
+        if (data['PLAYER']) {
+            let player = data['PLAYER'];
             if (player['rank']) {
                 htmlString += "<p>At age " + player['age'] +
                     ", " + normalizeString(searchQuery) +
@@ -33,29 +33,45 @@ function displayQueryData(response, searchQuery) {
             // htmlString += "<p>He has won " + player -- FIGURE OUT HOW TO SAY X WINS OUT OF Y FINALS APPEARANCES HERE
             htmlString += "<p>Here are <b>" + normalizeString(searchQuery.toLowerCase()) + "</b>'s results in Grand Slam finals:</p>";
             if (Object.keys(player['tournaments']).length > 0) {
-                htmlString += buildPlayerTournamentsTable(player['tournaments'])
+                htmlString += buildPlayerTournamentsTable(player['tournaments']);
             }
 
-        } else if (data['tournament']) {
-            let tournament = data['tournament'];
-            htmlString += "<p>Here are the results of the <b>" + normalizeString(searchQuery.toLowerCase()) + "</b> final by year:</p>";
-            htmlString += buildFinalistsTable(tournament, 'year');
-        } else if (data['year']) {
-            let year = data['year'];
-            htmlString += "<p>Here are the results of the <b>" + searchQuery + "</b> Grand Slam finals:</p>";
-            htmlString += buildFinalistsTable(year, 'tournament');
-        } else if (data['rankings']) {
-            let rankings = data['rankings'];
-            let mensRankings = rankings[0]
-            let womensRankings = rankings[1]
-            htmlString += "<div class='ranktable'>"
+        } else if (data['TOURNAMENT']) {
+            let tournament = data['TOURNAMENT'];
+            let mens = tournament[0];
+            let womens = tournament[1];
+            htmlString += "<div class='adjacenttable'>";
+            htmlString += "<b>Men's " + normalizeString(searchQuery.toLowerCase()) + "</b> final results by year:</p>";
+            htmlString += buildFinalistsTable(mens, 'year');
+            htmlString += "</div>";
+            htmlString += "<div class='adjacenttable'>";
+            htmlString += "<b>Women's " + normalizeString(searchQuery.toLowerCase()) + "</b> final results by year:</p>";
+            htmlString += buildFinalistsTable(womens, 'year');
+            htmlString += "</div>";
+        } else if (data['YEAR']) {
+            let year = data['YEAR'];
+            let mens = year[0];
+            let womens = year[1];
+            htmlString += "<div class='adjacenttable'>";
+            htmlString += "<p><b>" + searchQuery + " Men's</b> Grand Slam finals results:</p>";
+            htmlString += buildFinalistsTable(mens, 'tournament');
+            htmlString += "</div>";
+            htmlString += "<div class='adjacenttable'>";
+            htmlString += "<p><b>" + searchQuery + " Women's</b> Grand Slam finals results:</p>";
+            htmlString += buildFinalistsTable(womens, 'tournament');
+            htmlString += "</div>";
+        } else if (data['RANKINGS']) {
+            let rankings = data['RANKINGS'];
+            let mensRankings = rankings[0];
+            let womensRankings = rankings[1];
+            htmlString += "<div class='adjacenttable'>";
             htmlString += "<p>Current <b>ATP Men's Singles</b> rankings:</p>";
             htmlString += buildRankingsTable(mensRankings);
-            htmlString += "</div>"
-            htmlString += "<div class='ranktable'>"
+            htmlString += "</div>";
+            htmlString += "<div class='adjacenttable'>";
             htmlString += "<p>Current <b>ATP Women's Singles</b> rankings:</p>";
             htmlString += buildRankingsTable(womensRankings);
-            htmlString += "</div>"
+            htmlString += "</div>";
         }
         let queryDataDiv = document.getElementById("querydata");
         queryDataDiv.innerHTML = htmlString;
@@ -130,7 +146,7 @@ function normalizeString(name) {
 
     for (let i = 0; i < words.length; i++) {
         if (words[i].includes('.') || words[i].replace('.','').length < 3) {
-            words[i] = words[i].toUpperCase()
+            words[i] = words[i].toUpperCase();
         }
         words[i] = words[i][0].toUpperCase() + words[i].substring(1);
     }

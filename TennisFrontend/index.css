@@ -25,10 +25,9 @@ tr:nth-child(odd){
     /*color: #fff;*/
 }
 
-.ranktable {
-    width: 46%;
-    float: left;
-    padding: 2%;
+.adjacenttable {
+    display: inline-block;
+    padding: 12px;
 }
 
 /*#playerfact p {*/
