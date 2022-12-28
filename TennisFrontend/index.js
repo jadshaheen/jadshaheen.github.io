@@ -1,4 +1,4 @@
-let url = 'https://web-production-d7ff.up.railway.app/search';
+let url = 'https://web-production-16be.up.railway.app/search';
 
 function getQueryData() {
     let searchQuery = document.getElementById("query").value;
