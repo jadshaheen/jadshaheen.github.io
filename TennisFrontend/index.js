@@ -3,9 +3,18 @@ let url = 'https://web-production-16be.up.railway.app/search';
 function getQueryData() {
     let searchQuery = document.getElementById("query").value;
 
+    if (isNumber(searchQuery)) {
+        currYear = new Date().getFullYear();
+        if (parseFloat(searchQuery) < 1877 || parseFloat(searchQuery) > currYear) {
+            alert("Please enter a year between 1877 and " + currYear + ".");
+            return;
+        }
+    }
+
     let url_with_params = url + "?" + new URLSearchParams({
         query: searchQuery,
     })
+
     fetch(url_with_params)
         .then(
             response => displayQueryData(response, searchQuery),
@@ -14,6 +23,10 @@ function getQueryData() {
                 alert("ERROR (503): The application servers are unavailable.");
             }
         )
+}
+
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
 function displayQueryData(response, searchQuery) {
