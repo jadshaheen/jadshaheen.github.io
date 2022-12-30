@@ -1,11 +1,19 @@
 let url = 'https://web-production-16be.up.railway.app/search';
 
 function getQueryData() {
-    let searchQuery = document.getElementById("query").value;
+    queryBox = document.getElementById("query");
+    let searchQuery = queryBox.value;
+    let normalizedQuery = normalizeString(searchQuery);
+    queryBox.value = "";
+
+    let queryDataDiv = document.getElementById("querydata");
+    interimMessage = "<p>Retrieving data for '" + normalizedQuery + "'...";
+    queryDataDiv.innerHTML = interimMessage;
 
     if (isNumber(searchQuery)) {
         currYear = new Date().getFullYear();
         if (parseFloat(searchQuery) < 1877 || parseFloat(searchQuery) > currYear) {
+            queryDataDiv.innerHTML = "";
             alert("Please enter a year between 1877 and " + currYear + ".");
             return;
         }
@@ -17,7 +25,13 @@ function getQueryData() {
 
     fetch(url_with_params)
         .then(
-            response => displayQueryData(response, searchQuery),
+            response => {
+                displayQueryData(response, normalizedQuery);
+                // TODO: Figure out why this isn't working -> stops everything in queryDataDiv from rendering
+                // if queryDataDiv.innerHTML == interimMessage {
+                //     queryDataDiv.innerHTML = "No data to display for query '" + normalizedQuery + "'.";
+                // }
+            },
             error => {
                 console.log("PROMISE FAILURE!");
                 alert("ERROR (503): The application servers are unavailable.");
@@ -31,7 +45,6 @@ function isNumber(n) {
 
 function displayQueryData(response, searchQuery) {
     let responseJSON = response.json();
-    console.log(responseJSON);
     responseJSON.then(data => {
         let htmlString = "";
         if (data['PLAYER']) {
