@@ -49,17 +49,21 @@ function displayQueryData(response, searchQuery) {
         let htmlString = "";
         if (data['PLAYER']) {
             let player = data['PLAYER'];
-            if (player['rank']) {
-                htmlString += "<p>At age " + player['age'] +
-                    ", " + normalizeString(searchQuery) +
-                    " is currently ranked number " +
-                    "<b>" + player['rank'] + "</b>" +
-                    " in the world by the ATP.</p>";
-            }
-            // htmlString += "<p>He has won " + player -- FIGURE OUT HOW TO SAY X WINS OUT OF Y FINALS APPEARANCES HERE
-            htmlString += "<p>Here are <b>" + normalizeString(searchQuery.toLowerCase()) + "</b>'s results in Grand Slam finals:</p>";
-            if (Object.keys(player['tournaments']).length > 0) {
-                htmlString += buildPlayerTournamentsTable(player['tournaments']);
+            if (player['error']) {
+                htmlString += "<br>" + player['error'];
+            } else {
+                if (player['rank']) {
+                    htmlString += "<p>At age " + player['age'] +
+                        ", " + normalizeString(searchQuery) +
+                        " is currently ranked number " +
+                        "<b>" + player['rank'] + "</b>" +
+                        " in the world by the ATP.</p>";
+                }
+                // htmlString += "<p>He has won " + player -- FIGURE OUT HOW TO SAY X WINS OUT OF Y FINALS APPEARANCES HERE
+                htmlString += "<p>Here are <b>" + normalizeString(searchQuery.toLowerCase()) + "</b>'s results in Grand Slam finals:</p>";
+                if (Object.keys(player['tournaments']).length > 0) {
+                    htmlString += buildPlayerTournamentsTable(player['tournaments']);
+                }
             }
 
         } else if (data['TOURNAMENT']) {
@@ -152,16 +156,26 @@ function buildRankingsTable(rankingsData) {
     htmlString += "<tr>" +
         "<th>Rank</th>" +
         "<th>Player</th>" +
-        "<th>Points</th>" +
-        "<th>Age</th>" +
-        "</tr>";
+        "<th>Points</th>";
+    if (rankingsData[0].length == 5) {
+        htmlString += "<th>Age</th>";
+    }
+    htmlString += "</tr>";
     for (const row of rankingsData) {
-        htmlString += "<tr>" +
-            "<td>" + row[0] + "</td>" +
-            "<td>" + row[2] + "</td>" +
-            "<td>" + row[3] + "</td>" +
-            "<td>" + row[4] + "</td>" +
-            "</tr>";
+        if (row.length == 5) {
+            htmlString += "<tr>" +
+                "<td>" + row[0] + "</td>" +
+                "<td>" + row[2] + "</td>" +
+                "<td>" + row[3] + "</td>" +
+                "<td>" + row[4] + "</td>" +
+                "</tr>";
+        } else if (row.length == 3) {
+            htmlString += "<tr>" +
+                "<td>" + row[0] + "</td>" +
+                "<td>" + row[1] + "</td>" +
+                "<td>" + row[2] + "</td>" +
+                "</tr>";
+        }
     }
     htmlString += "</table>";
     return htmlString;
