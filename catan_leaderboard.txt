@@ -1,7 +1,16 @@
 last updated: 2023-02-16 10:34:11
 
-Total Matches: 92
+ALL-TIME
+Matches: 92
 
 viri: 41 (0.446)
 jad: 51 (0.554)
+
+TODAY (2023-2-16)
+Matches: 0
+
+viri: 0
+jad: 0
+
+
 
