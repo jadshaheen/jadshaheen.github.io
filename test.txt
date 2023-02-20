@@ -1,2 +1,0 @@
-TESTING CRONJOB GIT PERMISSIONS
-cronjob test run
