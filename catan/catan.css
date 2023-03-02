@@ -16,6 +16,11 @@ p {
   text-align: center;
 }
 
+.player_img {
+  width: auto;
+  height: 30em;
+}
+
 .wins_display {
   height: 30em;
   display: flex;
@@ -50,6 +55,11 @@ p {
 
 .logo {
   padding-top: 2em;
+}
+
+.logo_img {
+  width: auto;
+  height: 9em;
 }
 
 .allgames {
