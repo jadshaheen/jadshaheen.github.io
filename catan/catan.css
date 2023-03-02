@@ -12,12 +12,28 @@ p {
 }
 
 .player {
-  width: 40%;
+  width: 100%;
   text-align: center;
 }
 
 .wins_display {
-  padding-top: 14em;
+  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big_wins {
+  margin: 0;
+  font-size: 5em;
+}
+
+#left {
+  padding-right: 1em;
+}
+
+#right {
+  padding-left: 1em;
 }
 
 .centerdivs {
@@ -27,17 +43,18 @@ p {
 }
 
 .contentdiv {
-  width: 60%;
-  margin-left: 20%;
+  width: 70%;
+  margin-left: 15%;
   display: flex;
 }
 
 .logo {
-  padding-top: 6em;
+  padding-top: 2em;
 }
 
 .allgames {
-  padding-top: 4.5em;
+  padding-top: 0.5em;
+  font-weight: bold;
 }
 
 .tablediv {
