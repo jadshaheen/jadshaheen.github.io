@@ -30,15 +30,7 @@ p {
 
 .big_wins {
   margin: 0;
-  /* font-size: 5em; */
-}
-
-#left {
-  /* padding-right: 1em; */
-}
-
-#right {
-  /* padding-left: 1em; */
+  font-size: 5em;
 }
 
 .centerdivs {
@@ -48,8 +40,8 @@ p {
 }
 
 .contentdiv {
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
   display: flex;
 }
 
