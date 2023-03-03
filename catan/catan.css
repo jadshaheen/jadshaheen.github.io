@@ -31,11 +31,16 @@ p {
 .big_wins {
   margin: 0;
   font-size: 5em;
-  /* display: block; */
 }
 
 .big_percent {
-  /* display: block; */
+  margin: 0;
+  font-size: 3em;
+}
+
+.big_container {
+  display: block;
+  text-align: center;
 }
 
 .centerdivs {
@@ -62,6 +67,10 @@ p {
 .allgames {
   padding-top: 0.5em;
   font-weight: bold;
+}
+
+.allgames p {
+  font-size: 1.1em;
 }
 
 .tablediv {
