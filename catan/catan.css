@@ -30,15 +30,15 @@ p {
 
 .big_wins {
   margin: 0;
-  font-size: 5em;
+  /* font-size: 5em; */
 }
 
 #left {
-  padding-right: 1em;
+  /* padding-right: 1em; */
 }
 
 #right {
-  padding-left: 1em;
+  /* padding-left: 1em; */
 }
 
 .centerdivs {
