@@ -8,6 +8,7 @@ tr {
 
 @media only screen and (max-width: 768px) {
   .wins_display,
+  .big_container,
   .player,
   .centerdivs,
   .logo {
@@ -87,9 +88,11 @@ p {
   display: block;
 }
 
-table.data {
-  width: 36%;
-  margin-left: 32%;
-  margin-top: 1.8em;
-  border-spacing: 0 0.5em;
+@media only screen and (max-width: 768px) {
+  table.data {
+    width: 36%;
+    margin-left: 32%;
+    margin-top: 1.8em;
+    border-spacing: 0 0.5em;
+  }
 }
