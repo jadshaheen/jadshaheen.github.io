@@ -6,6 +6,15 @@ tr {
   background-color: #f8f8f8;
 }
 
+@media only screen and (max-width: 768px) {
+  .wins_display,
+  .player,
+  .centerdivs,
+  .logo {
+    display: none;
+  }
+}
+
 h1,
 p {
   text-align: center;
