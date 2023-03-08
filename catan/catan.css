@@ -88,7 +88,7 @@ p {
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   table.data {
     width: 36%;
     margin-left: 32%;
