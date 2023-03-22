@@ -27,12 +27,6 @@
     <div id="leaderboard-content"></div>
   </body>
   <script>
-    const leaderboardContent = document.getElementById("leaderboard-content");
-    fetch("viri_jad.html").then(
-      ((response) => response.text()).then((html) => {
-        leaderboardContent.innerHTML = html;
-      })
-    );
     const playerLinks = document.querySelectorAll(".player-link");
     playerLinks.forEach((link) => {
       link.addEventListener("click", () => {
@@ -40,6 +34,9 @@
         fetch(url)
           .then((response) => response.text())
           .then((html) => {
+            const leaderboardContent = document.getElementById(
+              "leaderboard-content"
+            );
             leaderboardContent.innerHTML = html;
           })
           .catch((error) => {
