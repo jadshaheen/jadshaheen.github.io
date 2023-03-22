@@ -118,6 +118,55 @@ p {
   display: block;
 }
 
+/* Dropdown Selector */
+
+.dropdown-button {
+  background-color: rgb(217, 217, 217);
+  color: black;
+  padding: 0.4em;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: relative;
+  align-items: normal;
+  text-align: center;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(57em);
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+/* Style for the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for the dropdown on hover */
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-menu:hover .dropdown-button {
+  background-color: rgb(191, 191, 191);
+}
+
 @media only screen and (min-width: 768px) {
   table.data {
     width: 36%;
