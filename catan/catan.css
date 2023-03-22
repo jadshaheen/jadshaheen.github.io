@@ -21,36 +21,6 @@ p {
   text-align: center;
 }
 
-/* center wrapper div */
-.players-list {
-  text-align: center;
-}
-
-/* left-align list items */
-.players-list ul {
-  text-align: left;
-  list-style: circle;
-  margin: 0;
-  padding: 0; /* remove default padding */
-  display: inline-block;
-}
-
-.players-list li {
-  margin: 1em;
-}
-
-.players-list a,
-.players-list a:visited {
-  color: black;
-  font-weight: bold;
-  text-decoration: none; /* remove underline */
-}
-
-.players-list a:hover {
-  text-decoration: underline;
-  /* font-style: italic; */
-}
-
 .player {
   width: 100%;
   text-align: center;
