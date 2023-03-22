@@ -90,7 +90,7 @@ p {
 
 /* Dropdown Selector */
 
-.dropdown-button {
+#dropdown-button {
   background-color: rgb(217, 217, 217);
   color: black;
   padding: 0.4em;
@@ -117,14 +117,17 @@ p {
 }
 
 /* Style for the links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.dropdown-content .player-link {
+  /* background-color: black; */
+  padding: 1em 1.8em;
   text-decoration: none;
   display: block;
+  border: none;
+  background-color: #f9f9f9;
+  min-width: 1.8em;
 }
 
-.dropdown-content a:hover {
+.dropdown-content .player-link:hover {
   background-color: #f1f1f1;
 }
 

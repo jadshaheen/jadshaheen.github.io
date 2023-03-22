@@ -11,15 +11,39 @@
     <h1>Catan Leaderboard</h1>
     <p>Select a player to view our leaderboard!</p>
     <div class="dropdown-menu">
-      <button class="dropdown-button">Select</button>
+      <button id="dropdown-button">Select</button>
       <div class="dropdown-content">
-        <a href="viri_jad.html">Virindh</a>
+        <!-- <a href="viri_jad.html">Virindh</a>
         <a href="pill_jad.html">AJ</a>
         <a href="abhi_jad.html">Abhi</a>
         <a href="saquon_jad.html">Zaki</a>
-        <a href="jblova_jad.html">Lali</a>
+        <a href="jblova_jad.html">Lali</a> -->
+        <button class="player-link" data-url="viri_jad.html">Virindh</button>
+        <button class="player-link" data-url="pill_jad.html">Pill</button>
+        <button class="player-link" data-url="abhi_jad.html">Abhi</button>
+        <button class="player-link" data-url="saquon_jad.html">Zaki</button>
+        <button class="player-link" data-url="jblova_jad.html">Lali</button>
       </div>
     </div>
     <div id="leaderboard-content"></div>
   </body>
+  <script>
+    const playerLinks = document.querySelectorAll(".player-link");
+    playerLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        const url = link.dataset.url;
+        fetch(url)
+          .then((response) => response.text())
+          .then((html) => {
+            const leaderboardContent = document.getElementById(
+              "leaderboard-content"
+            );
+            leaderboardContent.innerHTML = html;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      });
+    });
+  </script>
 </html>
