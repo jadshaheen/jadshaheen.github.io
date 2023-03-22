@@ -136,7 +136,8 @@ tr {
 }
 
 /* Style for the dropdown on hover */
-.dropdown-menu:hover .dropdown-content {
+.dropdown-menu:hover .dropdown-content,
+.dropdown-menu:active .dropdown-content {
   display: block;
 }
 
