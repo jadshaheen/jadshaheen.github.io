@@ -90,7 +90,7 @@ p {
 
 /* Dropdown Selector */
 
-#dropdown-button {
+.dropdown-button {
   background-color: rgb(217, 217, 217);
   color: black;
   padding: 0.4em;
