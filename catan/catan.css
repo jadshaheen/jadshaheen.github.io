@@ -124,7 +124,7 @@ p {
   display: block;
   border: none;
   background-color: #f9f9f9;
-  min-width: 1.8em;
+  width: 100%;
 }
 
 .dropdown-content .player-link:hover {
@@ -136,7 +136,7 @@ p {
   display: block;
 }
 
-.dropdown-menu:hover .dropdown-button {
+.dropdown-menu:hover #dropdown-button {
   background-color: rgb(191, 191, 191);
 }
 
