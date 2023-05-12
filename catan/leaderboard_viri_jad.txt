@@ -1,14 +1,14 @@
-last updated: 2023-05-11 21:00:51
+last updated: 2023-05-12 00:30:04
 
 ALL-TIME
-Matches: 350
+Matches: 352
 
-viri: 153 (0.437)
-jad: 197 (0.563)
+viri: 155 (0.44)
+jad: 197 (0.56)
 
-TODAY (2023-05-11)
-Matches: 12
+TODAY (2023-05-12)
+Matches: 2
 
-viri: 5
-jad: 7
+viri: 2
+jad: 0
 
