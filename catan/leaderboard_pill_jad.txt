@@ -1,14 +1,14 @@
-last updated: 2023-06-08 22:00:20
+last updated: 2023-06-08 23:34:45
 
 ALL-TIME
-Matches: 11
+Matches: 12
 
-pill: 6 (0.545)
-jad: 5 (0.455)
+pill: 7 (0.583)
+jad: 5 (0.417)
 
 TODAY (2023-06-08)
-Matches: 4
+Matches: 5
 
-pill: 2
+pill: 3
 jad: 2
 
