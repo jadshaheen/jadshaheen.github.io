@@ -1,14 +1,14 @@
-last updated: 2023-09-04 21:00:34
+last updated: 2023-09-04 22:00:30
 
 ALL-TIME
-Matches: 12
+Matches: 13
 
-Saquon: 5 (0.417)
-jad: 7 (0.583)
+Saquon: 6 (0.462)
+jad: 7 (0.538)
 
 TODAY (2023-09-04)
-Matches: 1
+Matches: 2
 
-Saquon: 1
+Saquon: 2
 jad: 0
 
