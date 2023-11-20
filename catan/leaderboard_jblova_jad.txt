@@ -1,14 +1,14 @@
-last updated: 2023-09-04 22:00:38
+last updated: 2023-11-19 18:16:59
 
 ALL-TIME
-Matches: 7
+Matches: 9
 
-JBlova: 3 (0.429)
-jad: 4 (0.571)
+JBlova: 5 (0.556)
+jad: 4 (0.444)
 
-TODAY (2023-09-04)
-Matches: 2
+TODAY (2023-11-16)
+Matches: 1
 
-JBlova: 2
+JBlova: 1
 jad: 0
 
