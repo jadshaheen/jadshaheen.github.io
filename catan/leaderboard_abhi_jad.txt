@@ -1,14 +1,14 @@
-last updated: 2023-11-20 20:07:52
+last updated: 2023-11-20 22:30:18
 
 ALL-TIME
-Matches: 48
+Matches: 49
 
-Abhi0875: 10 (0.208)
-jad: 38 (0.792)
+Abhi0875: 11 (0.224)
+jad: 38 (0.776)
 
-TODAY (2023-11-19)
-Matches: 4
+TODAY (2023-11-20)
+Matches: 1
 
-Abhi0875: 2
-jad: 2
+Abhi0875: 1
+jad: 0
 
