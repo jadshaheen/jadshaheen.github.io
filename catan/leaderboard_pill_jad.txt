@@ -1,10 +1,10 @@
-last updated: 2023-11-19 18:16:40
+last updated: 2023-11-21 08:30:32
 
 ALL-TIME
-Matches: 18
+Matches: 5
 
-pill: 9 (0.5)
-jad: 9 (0.5)
+pill: 2 (0.4)
+jad: 3 (0.6)
 
 TODAY (2023-11-06)
 Matches: 1
