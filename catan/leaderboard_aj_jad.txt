@@ -1,12 +1,12 @@
-last updated: 2023-11-21 23:30:28
+last updated: 2023-11-22 01:03:31
 
 ALL-TIME
-Matches: 19
+Matches: 20
 
-AJ: 10 (0.526)
-Jad: 9 (0.474)
+AJ: 11 (0.55)
+Jad: 9 (0.45)
 
-TODAY (2023-11-21)
+TODAY (2023-11-22)
 Matches: 1
 
 AJ: 1
