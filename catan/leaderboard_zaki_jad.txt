@@ -1,14 +1,14 @@
-last updated: 2023-11-21 08:57:07
+last updated: 2023-11-21 23:30:39
 
 ALL-TIME
-Matches: 18
+Matches: 19
 
-Saquon: 8 (0.444)
-jad: 10 (0.556)
+Zaki: 9 (0.474)
+Jad: 10 (0.526)
 
-TODAY (2023-11-16)
+TODAY (2023-11-21)
 Matches: 1
 
-Saquon: 1
-jad: 0
+Zaki: 1
+Jad: 0
 
