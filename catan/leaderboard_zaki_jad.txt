@@ -1,14 +1,14 @@
-last updated: 2023-11-24 23:30:35
+last updated: 2023-11-25 23:00:39
 
 ALL-TIME
-Matches: 21
+Matches: 22
 
-Zaki: 9 (0.429)
-Jad: 12 (0.571)
+Zaki: 10 (0.455)
+Jad: 12 (0.545)
 
-TODAY (2023-11-24)
+TODAY (2023-11-25)
 Matches: 1
 
-Zaki: 0
-Jad: 1
+Zaki: 1
+Jad: 0
 
