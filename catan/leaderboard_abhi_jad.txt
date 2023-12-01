@@ -1,14 +1,14 @@
-last updated: 2023-11-26 23:00:16
+last updated: 2023-11-30 23:05:58
 
 ALL-TIME
-Matches: 59
+Matches: 60
 
-Abhi: 12 (0.203)
-Jad: 47 (0.797)
+Abhi: 12 (0.2)
+Jad: 48 (0.8)
 
-TODAY (2023-11-26)
-Matches: 3
+TODAY (2023-11-30)
+Matches: 1
 
 Abhi: 0
-Jad: 3
+Jad: 1
 
