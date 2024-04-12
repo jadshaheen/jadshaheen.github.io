@@ -1,12 +1,12 @@
-last updated: 2024-04-04 23:30:35
+last updated: 2024-04-12 17:36:02
 
 ALL-TIME
-Matches: 30
+Matches: 31
 
-Zaki: 13 (0.433)
-Jad: 17 (0.567)
+Zaki: 13 (0.419)
+Jad: 18 (0.581)
 
-TODAY (2024-04-04)
+TODAY (2024-04-05)
 Matches: 1
 
 Zaki: 0
