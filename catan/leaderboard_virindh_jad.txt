@@ -1,14 +1,14 @@
-last updated: 2024-07-01 12:51:03
+last updated: 2024-07-02 23:30:02
 
 ALL-TIME
-Matches: 959
+Matches: 962
 
-Virindh: 431 (0.449)
-Jad: 528 (0.551)
+Virindh: 432 (0.449)
+Jad: 530 (0.551)
 
-TODAY (2024-07-01)
-Matches: 4
+TODAY (2024-07-02)
+Matches: 3
 
-Virindh: 3
-Jad: 1
+Virindh: 1
+Jad: 2
 
