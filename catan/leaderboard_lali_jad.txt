@@ -1,12 +1,12 @@
-last updated: 2024-12-15 17:00:49
+last updated: 2025-01-20 12:48:33
 
 ALL-TIME
-Matches: 12
+Matches: 13
 
-Lali: 7 (0.583)
-Jad: 5 (0.417)
+Lali: 8 (0.615)
+Jad: 5 (0.385)
 
-TODAY (2024-11-21)
+TODAY (2025-01-19)
 Matches: 1
 
 Lali: 1
