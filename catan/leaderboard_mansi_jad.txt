@@ -1,14 +1,14 @@
-last updated: 2025-07-01 23:30:51
+last updated: 2025-07-02 00:00:53
 
 ALL-TIME
-Matches: 19
+Matches: 20
 
-Mansi: 10 (0.526)
-Jad: 9 (0.474)
+Mansi: 11 (0.55)
+Jad: 9 (0.45)
 
 TODAY (2025-07-01)
-Matches: 1
+Matches: 2
 
-Mansi: 1
+Mansi: 2
 Jad: 0
 
