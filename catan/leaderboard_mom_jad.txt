@@ -1,14 +1,14 @@
-last updated: 2025-08-12 23:15:59
+last updated: 2025-09-13 01:01:04
 
 ALL-TIME
-Matches: 31
+Matches: 32
 
-Mom: 15 (0.484)
-Jad: 16 (0.516)
+Mom: 16 (0.5)
+Jad: 16 (0.5)
 
-TODAY (2025-08-07)
-Matches: 2
+TODAY (2025-09-13)
+Matches: 1
 
-Mom: 2
+Mom: 1
 Jad: 0
 
