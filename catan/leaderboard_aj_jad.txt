@@ -1,14 +1,14 @@
-last updated: 2024-12-15 17:00:26
+last updated: 2025-11-29 00:00:29
 
 ALL-TIME
-Matches: 47
+Matches: 49
 
-AJ: 18 (0.383)
-Jad: 29 (0.617)
+AJ: 20 (0.408)
+Jad: 29 (0.592)
 
-TODAY (2024-12-10)
-Matches: 1
+TODAY (2025-11-28)
+Matches: 2
 
-AJ: 0
-Jad: 1
+AJ: 2
+Jad: 0
 
